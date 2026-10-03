@@ -64,3 +64,4 @@ Contact details appear in the header, footer and on `contact.html` — search fo
 Headings use Archivo Narrow and body text uses Archivo, loaded from Google Fonts.
 If your visitors have slow connections, the site falls back to Arial automatically and
 still looks correct.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7db37a40-32a1-4dd4-a617-adfe7dc4c9f4/deploy-status)](https://app.netlify.com/projects/shtraders/deploys)
