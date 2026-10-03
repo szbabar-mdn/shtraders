@@ -86,6 +86,48 @@
         <li>New Press Market</li>
         <li>Malakand Chowk, Mardan</li>
         <li><a href="tel:+923339876051">0333-9876051</a></li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WhatsApp Direct Redirect</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        input, button { padding: 10px; margin: 5px 0; font-size: 16px; }
+        button { background-color: #25D366; color: white; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+
+    <h2>Direct WhatsApp Chat Launcher</h2>
+    <input type="text" id="phone" placeholder="Phone Number with Country Code (e.g., 923001234567)" style="width: 350px;">
+    <br>
+    <input type="text" id="message" placeholder="Optional Message" style="width: 350px;">
+    <br>
+    <button onclick="launchWhatsApp()">Open WhatsApp Web</button>
+
+    <script>
+        function launchWhatsApp() {
+            let phone = document.getElementById('phone').value;
+            let message = document.getElementById('message').value;
+
+            // Strip non-numeric characters
+            phone = phone.replace(/\D/g, '');
+
+            if (!phone) {
+                alert("Please enter a valid phone number.");
+                return;
+            }
+
+            // Direct URL targeted specifically for Desktop / Web
+            let url = `https://web.whatsapp.com/send?phone=${phone}&text=${encodeURIComponent(message)}`;
+            
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+</html>
         <li><a href="mailto:szbabar@gmail.com">szbabar@gmail.com</a></li>
       </ul>
     </div>
